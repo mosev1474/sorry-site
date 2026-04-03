@@ -35,9 +35,9 @@
     --gradient-3: linear-gradient(135deg, #FFB6C1, #FFC0CB);
 
     /* الخطوط */
-    --font-arabic: 'Cairo', sans-serif;
-    --font-english: 'BeautyGadish', 'Cairo', sans-serif;
-    --font-poem: 'Amiri', serif;
+    --font-arabic: 'Cairo', 'Segoe UI', Tahoma, sans-serif;
+    --font-english: 'BeautyGadish', 'Cairo', 'Segoe UI', sans-serif;
+    --font-poem: 'Amiri', 'Times New Roman', serif;
 }
 
 /* ============================================
@@ -151,15 +151,12 @@ body {
         transform: translateY(100vh) rotate(0deg) scale(0.8);
         opacity: 0;
     }
-
     10% {
         opacity: 0.6;
     }
-
     90% {
         opacity: 0.6;
     }
-
     100% {
         transform: translateY(-100vh) rotate(360deg) scale(1.2);
         opacity: 0;
@@ -220,7 +217,6 @@ body {
         opacity: 0;
         transform: scale(0.8);
     }
-
     to {
         opacity: 1;
         transform: scale(1);
@@ -346,16 +342,12 @@ body {
 }
 
 @keyframes shake {
-
-    0%,
-    100% {
+    0%, 100% {
         transform: translateX(0);
     }
-
     25% {
         transform: translateX(-10px);
     }
-
     75% {
         transform: translateX(10px);
     }
@@ -375,7 +367,6 @@ body {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
@@ -448,44 +439,20 @@ body {
     text-shadow: 0 2px 4px rgba(255, 105, 180, 0.3);
 }
 
-.poem-line:nth-child(1) {
-    animation-delay: 0.1s;
-}
-
-.poem-line:nth-child(2) {
-    animation-delay: 0.2s;
-}
-
-.poem-line:nth-child(3) {
-    animation-delay: 0.3s;
-}
-
-.poem-line:nth-child(4) {
-    animation-delay: 0.4s;
-}
-
-.poem-line:nth-child(5) {
-    animation-delay: 0.5s;
-}
-
-.poem-line:nth-child(6) {
-    animation-delay: 0.6s;
-}
-
-.poem-line:nth-child(7) {
-    animation-delay: 0.7s;
-}
-
-.poem-line:nth-child(8) {
-    animation-delay: 0.8s;
-}
+.poem-line:nth-child(1) { animation-delay: 0.1s; }
+.poem-line:nth-child(2) { animation-delay: 0.2s; }
+.poem-line:nth-child(3) { animation-delay: 0.3s; }
+.poem-line:nth-child(4) { animation-delay: 0.4s; }
+.poem-line:nth-child(5) { animation-delay: 0.5s; }
+.poem-line:nth-child(6) { animation-delay: 0.6s; }
+.poem-line:nth-child(7) { animation-delay: 0.7s; }
+.poem-line:nth-child(8) { animation-delay: 0.8s; }
 
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -522,7 +489,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-/* Scrollbar styling */
 .gallery-scroll::-webkit-scrollbar {
     height: 8px;
 }
@@ -638,6 +604,15 @@ body {
     animation: floatHeart 2s ease-in-out infinite;
 }
 
+@keyframes floatHeart {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 .music-player audio {
     width: 100%;
     margin-bottom: 20px;
@@ -704,28 +679,22 @@ body {
     .main-title {
         font-size: 2rem;
     }
-
     .section-title {
         font-size: 2.5rem;
     }
-
     .poem-line {
         font-size: 1.4rem;
     }
-
     .gallery-item {
         width: 300px;
         height: 300px;
     }
-
     .gallery-container {
         padding: 30px 20px;
     }
-
     .final-word {
         font-size: 3.5rem;
     }
-
     .login-box {
         padding: 40px 25px;
     }
@@ -735,37 +704,29 @@ body {
     .main-title {
         font-size: 1.6rem;
     }
-
     .section-title {
         font-size: 2rem;
     }
-
     .poem-line {
         font-size: 1.2rem;
         margin: 15px 0;
     }
-
     .gallery-item {
         width: 250px;
         height: 250px;
     }
-
     .gallery-container {
         padding: 20px 15px;
     }
-
     .final-word {
         font-size: 2.5rem;
     }
-
     .login-box {
         padding: 30px 20px;
     }
-
     .poetry-box {
         padding: 30px 20px;
     }
-
     .love-message {
         padding: 50px 20px;
     }
