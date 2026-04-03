@@ -1,5 +1,5 @@
-const correctDay = 15;
-const correctMonth = 6;
+const correctDay = 16;
+const correctMonth = 2;
 
 function createHearts() {
     const container = document.getElementById("heartsContainer");
@@ -22,9 +22,9 @@ function checkBirthday() {
     const error = document.getElementById("errorMessage");
 
     if (day === correctDay && month === correctMonth) {
-        window.location.href = "NEXT_PAGE_LINK";
+        window.location.href = "next.html";
     } else {
-        error.innerText = "غلط... بس جربي تاني 🥺";
+        error.innerText = "اي يحسونه نسيتي وله اي 🤨";
     }
 }
 
