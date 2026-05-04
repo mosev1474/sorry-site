@@ -1,0 +1,18 @@
+name: Build ESP8266 BIN
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install PlatformIO
+        run: pip install platformio
+
+      - name: Build
+        run: pio project init --board nodemcuv2
+
+      - name: Compile
+        run: pio run
